@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pacchetto Sito Vetrina Pronto — 3 demo dal vivo</title>
+<meta name="description" content="3 demo dal vivo del Pacchetto Sito Vetrina Pronto: Rivista, Bottega, Manifesto. Template HTML/CSS pronti per piccole attività, da aprire e usare.">
+<meta name="robots" content="noindex">
+<style>
+  :root{
+    --fondo:#f3eee5;
+    --inchiostro:#1d1714;
+    --tenue:#5c514a;
+    --filetto:#dcd3c3;
+    --accento:#6b2420;
+    --su-accento:#f7efe6;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--fondo);
+    color:var(--inchiostro);
+    font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    line-height:1.5;
+  }
+  a{color:inherit}
+  img{max-width:100%;display:block}
+  .wrap{max-width:980px;margin-inline:auto;padding-inline:clamp(20px,5vw,48px)}
+  header.hero{padding-block:clamp(56px,10vw,110px) clamp(40px,7vw,72px);border-bottom:1px solid var(--filetto)}
+  .kicker{font-size:.8125rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accento);font-weight:700;margin:0 0 18px}
+  h1{font-size:clamp(2.1rem,5.2vw,3.4rem);line-height:1.05;letter-spacing:-.01em;margin:0 0 20px;max-width:16ch}
+  .lead{font-size:1.125rem;color:var(--tenue);max-width:46ch;margin:0 0 32px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    min-height:48px;padding:0 24px;border-radius:999px;
+    font-weight:600;font-size:.9375rem;text-decoration:none;
+    border:1px solid var(--inchiostro);
+  }
+  .btn--piena{background:var(--inchiostro);color:var(--fondo)}
+  .btn--piena:hover{background:var(--accento);border-color:var(--accento)}
+  .btn--vuota{background:transparent}
+  .btn--vuota:hover{background:var(--inchiostro);color:var(--fondo)}
+  section.stili{padding-block:clamp(48px,8vw,88px)}
+  h2{font-size:clamp(1.4rem,3vw,1.8rem);margin:0 0 8px}
+  .sotto{color:var(--tenue);margin:0 0 36px;max-width:50ch}
+  .griglia{display:grid;gap:28px;grid-template-columns:1fr}
+  @media(min-width:760px){.griglia{grid-template-columns:repeat(3,1fr)}}
+  .scheda{
+    border:1px solid var(--filetto);border-radius:18px;overflow:hidden;
+    background:#fff;display:flex;flex-direction:column;
+    text-decoration:none;color:inherit;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .scheda:hover{transform:translateY(-3px);box-shadow:0 14px 32px -16px rgba(29,23,20,.35)}
+  .scheda-anteprima{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:1.6rem;font-style:italic}
+  .anteprima-rivista{background:#efe8da;color:#6b2420}
+  .anteprima-bottega{background:#f1e4d2;color:#8a4a1f}
+  .anteprima-manifesto{background:#1f3a52;color:#fff}
+  .scheda-corpo{padding:22px 22px 26px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .scheda-corpo h3{margin:0;font-size:1.15rem}
+  .scheda-corpo p{margin:0;color:var(--tenue);font-size:.9375rem;flex:1}
+  .scheda-link{font-size:.8125rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accento)}
+  footer{padding-block:clamp(40px,7vw,64px);border-top:1px solid var(--filetto)}
+  .footer-wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+  .footer-testo{color:var(--tenue);font-size:.875rem;max-width:52ch}
+  .avviso{background:var(--inchiostro);color:var(--su-accento);text-align:center;font-size:.875rem;padding:10px 16px}
+  .avviso a{color:#fff;text-decoration:underline;font-weight:600}
+</style>
+</head>
+<body>
+
+<div class="avviso">Queste sono demo dal vivo — nessun dato reale, nessuna attività vera.</div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">Demo dal vivo</p>
+    <h1>Pacchetto Sito Vetrina Pronto</h1>
+    <p class="lead">Un template one-page in HTML/CSS puro, pronto per piccole attività locali —
+      centri estetici, negozi, studi artigiani. Niente abbonamenti, niente account, niente
+      dipendenze da server: si apre e funziona. Tre stili molto diversi tra loro, qui tutti
+      navigabili dal vivo.</p>
+    <div class="cta-row">
+      <a class="btn btn--piena" href="https://francesco205.gumroad.com/l/sito-vetrina-bundle?utm_source=demo&amp;utm_medium=github&amp;utm_campaign=test_nov2026" target="_blank" rel="noopener">Acquista i 3 stili — 19 €</a>
+      <a class="btn btn--vuota" href="#stili">Guarda le demo</a>
+    </div>
+  </div>
+</header>
+
+<section class="stili" id="stili">
+  <div class="wrap">
+    <h2>Tre stili, tre identità diverse</h2>
+    <p class="sotto">Ogni demo è il sito vero e completo, con testi ed esempio di attività a
+      scopo illustrativo. Le foto sono segnaposto da sostituire con le proprie.</p>
+    <div class="griglia">
+
+      <a class="scheda" href="rivista/">
+        <div class="scheda-anteprima anteprima-rivista">Rivista</div>
+        <div class="scheda-corpo">
+          <h3>Rivista</h3>
+          <p>Elegante ed editoriale, tipografia da rivista, impaginazione curata.</p>
+          <span class="scheda-link">Apri la demo →</span>
+        </div>
+      </a>
+
+      <a class="scheda" href="bottega/">
+        <div class="scheda-anteprima anteprima-bottega">Bottega</div>
+        <div class="scheda-corpo">
+          <h3>Bottega</h3>
+          <p>Caldo e artigianale, per attività che vogliono trasmettere vicinanza.</p>
+          <span class="scheda-link">Apri la demo →</span>
+        </div>
+      </a>
+
+      <a class="scheda" href="manifesto/">
+        <div class="scheda-anteprima anteprima-manifesto">Manifesto</div>
+        <div class="scheda-corpo">
+          <h3>Manifesto</h3>
+          <p>Grande, diretto, a colori pieni: massimo impatto fin dal primo schermo.</p>
+          <span class="scheda-link">Apri la demo →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-wrap">
+    <p class="footer-testo">Ogni demo contiene una piccola fascia in alto che segnala che è una
+      demo: nel file che si scarica non c'è.</p>
+    <a class="btn btn--vuota" href="https://francesco205.gumroad.com/l/sito-vetrina-bundle?utm_source=demo&amp;utm_medium=github&amp;utm_campaign=test_nov2026" target="_blank" rel="noopener">Vai alla pagina del prodotto</a>
+  </div>
+</footer>
+
+</body>
+</html>
